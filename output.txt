@@ -1,0 +1,10 @@
+The Matrix,sci-fi,1999,31000,https://youtu.be/vKQi3bBA1y8?si=HYP9jVJPclJcDfCE
+Spirited Away,animation,2001,132000,https://youtu.be/ByXuk9QqQkk?si=hU1x0mz8f1UICmrT
+Pulp Fiction,crime,1994,35000,https://youtu.be/s7EdQ4FqbhY?si=c_G21Yopf_1GnNYN
+The Grand Budapest Hotel,comedy,2014,1100,https://youtu.be/mXRztrOK47I?si=ymEVFc-_TzCXrOLq
+Inception,sci-fi,2010,160000,https://youtu.be/YoHD9XEInc0?si=PQ92F6_aKXWS2oPs
+The Dark Knight,action,2008,201000,https://youtu.be/EXeTwQWrcwY?si=dPs1BcKeZ2jVEXCL
+The Social Network,drama,2010,93000,https://youtu.be/lB95KLmpLR4?si=-yrQXWUPl-fzeVri
+Fight Club,drama,1999,27000,https://youtu.be/qtRKdVHc-cE?si=pdUYxuPEECk0xSVy
+La La Land,romance,2016,214000,https://youtu.be/0pdqf4P9MB8?si=dZIxjG1y1quV4ZUk
+500 Days of Summer,romance,2009,122000,https://youtu.be/PsD0NpFSADM?si=8TxHCUEmk-ecgc5b
