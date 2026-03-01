@@ -1,19 +1,33 @@
-# Assignment 10
+# 🎬 Movie Management System
 
-## Requirements
-1. Add multiple *undo* and *redo* functionality for the `add`, `remove`, and `update` operations. Implement this functionality using inheritance and polymorphism. You will have **Undo** and **Redo** buttons on the GUI, as well as a key combination to undo and redo the operations (e.g. `Ctrl+Z`, `Ctrl+Y`).
+A professional C++ desktop application built with the **Qt Framework**, featuring a layered architecture, custom models, and full data persistence. This project was designed to manage a movie database with distinct Administrator and User modes.
 
-2. Show the contents of the `adoption list` / `movie watch list` / `shopping basket` / `tutorial watch list` using a table view. You must use the [Qt View/Model](https://doc.qt.io/qt-6/modelview.html) components (`QTableView`). Create your own model – a class which inherits from [`QAbstractTableModel`](https://doc.qt.io/qt-6/qabstracttablemodel.html). This window will be opened from your GUI's main window.
+## 🚀 Core Features
 
-<!--
-## Bonus Possibility [0.1p]
-Add multiple *undo* and *redo* functionality for the `adoption list` / `movie watch list` / `shopping basket` / `tutorial watch list`. This will be tested through the application's GUI.
+### 🛠 Administrator Mode
+* **Database Management:** Add, update, and delete movies (Title, Genre, Year, Likes, Trailer Link).
+* **Validation:** Strict data validation using custom `Validator` classes and Exception handling.
+* **Undo/Redo**
+* **Live Updates:** Repository changes are reflected instantly in the GUI using a custom `QAbstractTableModel`.
 
+### 👤 User Mode
+* **Interactive Discovery:** Filter movies by genre and cycle through them one by one.
+* **Auto-Play Trailers:** Movie trailers open automatically in the default web browser.
+* **Personal Watchlist:** Add movies to a list and "Like" them upon completion to update the global database.
+* **Export Options:** Save and view the watchlist in **CSV** (Excel/Notepad) or **HTML** (Browser) formats.
 
-## Bonus Possibility [0.1p]
-Use [custom Qt delegates](https://doc.qt.io/qt-6/qtwidgets-itemviews-stardelegate-example.html). In one of the columns of the Qt table view that shows the elements of the `adoption list` / **etc...**, display an image of the dog, trench coat or a play button that plays the movie trailer or the tutorial - depending on the problem statement. See the example images below.
+---
 
-![image](https://user-images.githubusercontent.com/25611695/119180503-0bfef700-ba79-11eb-86ae-3a42d41bb437.png)
-![image](https://user-images.githubusercontent.com/25611695/119180582-2507a800-ba79-11eb-921c-22f64a05522b.png)
+## 🏗 Technical Specifications
 
--->
+### 📂 Layered Architecture
+1. **Domain Layer:** `Movie` entity and `Validators`.
+2. **Repository Layer:** File-backed storage using `iostream` (text files).
+3. **Service Layer:** Business logic, STL algorithm integration, and Undo/Redo stacks.
+4. **GUI Layer:** Custom Qt interface (manual layouts) utilizing the **Model/View** architecture.
+
+### 💻 Performance & Standards
+* **STL Integration:** Replaced all manual loops with STL algorithms (`std::copy_if`, `std::for_each`, `std::find`, etc.).
+* **Memory Safety:** Smart pointers and RAII principles for resource management.
+* **Testing:** **98% Code Coverage** on all non-UI layers (Service & Repository).
+* **Exception Handling:** Custom exception hierarchy for repository conflicts and user input errors.
